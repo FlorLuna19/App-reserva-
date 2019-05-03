@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-flow: column;
+}
+
+/*Estilo del login*/
+.contenedor-form{
+    background-color: rgb(10, 27, 82);
+    width: 320px;
+    height: 430px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 7%;
+    margin-left: 40%;
+}
+
+.contenedor-form h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.contenedor-form label{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+}
+
+.contenedor-form input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contenedor-form input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 154, 2);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-form input[type="submit"]:hover{
+    font-weight: bold;
+    border: solid 2px;
+    background: rgb(219, 68, 42);
+}
+
+#button-login{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 154, 2);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#button-login:hover{
+    font-weight: bold;
+    border: solid 2px;
+    background: rgb(219, 68, 42);
+}
+
+
+.contenedor-form a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 10px;
+    color: rgb(184, 184, 184);
+}
+.contenedor-form a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*Estilo del home*/
+header{
+    background: rgb(255, 154, 2);
+    background-color: rgb(10, 27, 82);
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    color: white;
+    justify-content: space-between;
+
+}
+
+.contenedor-logo{
+    display: flex;
+    width: 30%;
+    margin: 20px;
+    flex-flow: row;
+    justify-content: left;
+}
+
+nav{
+    background-color: rgb(10, 27, 82);
+    width: 70%;
+    justify-content: right;
+}
+
+.menu-home{
+    display: inline-flex;
+    flex-flow: row;
+    height: 100px;
+    justify-content: right;
+}
+    .menu-home li{
+    flex-grow: 1;
+    list-style: none;
+    }
+    .menu-home li a{
+        background-color: rgb(10, 27, 82);
+        text-decoration: none;
+        color: white;
+        font-style: normal;
+        font-size: 100%;
+        text-align: center;
+        padding: 18px; 
+        display:block;
+           }
+    .menu-home li a:hover{
+    background: rgb(255, 154, 2);
+    font-style: italic;
+    font-weight: bold;
+    }
