@@ -1,4 +1,4 @@
-function validarUsuario(user, password){
+/*function validarUsuario(user, password){
     if (user == "user" && password == "123"){
         return true;
 
@@ -8,14 +8,14 @@ function validarUsuario(user, password){
 }
 
 module.exports.validarUsuario = validarUsuario;
+*/
 
-//////
 
 function validarUsuario(user, password){
-    if (user == "user" && password == "123"){
+    if (user == "user" && password == "user"){
         return true;
 
-    }if (user == "user2" && password =="456"){
+    }if (user == "maria" && password =="maria"){
         return true;
     }
     else {

@@ -1,0 +1,16 @@
+{
+    "resultado": 
+        {"codigo": "200",
+            "mensaje": "OK"
+        },
+
+        "datos": {
+            "lugaresDisponibles": [
+                {
+                    "dia": "Lunes",
+                    "sentido": "ida",
+                    "lugares": 9
+                }
+            ]
+        }
+}

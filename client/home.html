@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript"></script>
     
-    <script src=""></script>
+    <script src="reserva.js"></script>
 
     <title>Home</title>
 </head>
@@ -16,34 +16,68 @@
 <body>
     <header>
         <div class="contenedor-logo">
-            <a href="home.html"><img id="logo" src="logo.png" alt="logo"></a><br>
-            <h3>Servicio de transporte</h3>
+            <a href="home.html"><img class="logo" src="images/logo-final.png" alt="logo"></a><br>
+            <h4>Servicio de transporte para empresas</h4>
         </div>
 
         <nav>
             <ul class="menu-home">
                     <li><a href="usuario.html">Mi usuario</a></li>
                     <li><a href="recorrido.html">Recorrido</a></li>
-                    <li><a href="paradas.html">Paradas</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
                     <li><a href="empresa.html">La empresa</a></li>
                     <li><a href="">Calendario</a></li>
                     
             </ul>
+
+            <button id="boton-usuario"><a href="index.html">Inicia sesión</a></button>
+
+            <button id= "boton-usuario" onclick="mostrarUsuarioLogueado()">Usuario</button>
+
         </nav>
 
     </header>
 
-    <div class="contenedor-portada">
-        <img src="img/foto1.jpg" alt="foto1.jpg">
-        <h3>Título secundario</h3>
+    <div class="contenedor-general">
+        <img class="img-portada" src="images/foto11.jpg" alt="foto1.jpg">
+    
+        <section class="contenedor-home">
+
+            <div class="caja-texto">
+                <h3>Título secundario</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem antium doloremque ltium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
+
+            </div>
+
+            <div class="caja-texto">
+                    <h3>Título secundario</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+    
+                </div>
+
+            <div class="caja-reserva">
+                <h3>Para reservar su viaje</h3>
+                <p>Ingrese al siguiente link</p>
+
+                <div class="contenedor-botones-usuario"></div>
+                <!--button id="botonReserva" onclick="consultarLugarDisponible(reserva)">Reserva tu lugar</button-->
+                <a href="/reserva.html">Reserva tu lugar</a>
+                </div>
+        
+        </section>
+
+
+
     </div>
 
-    <section class="contenedor-extra">
-        
-
-    </section>
-
-
+    <footer class="footer">
+            <div class="contacto">
+                <h5>Dirección de la empresa</h5>
+                <h5>Teléfono 011-1512 1212</h5>
+                <h5>Datos datos datos</h5>
+            </div>
+    
+    </footer>
 
 </body>
 </html>

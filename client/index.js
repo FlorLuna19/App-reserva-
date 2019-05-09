@@ -31,3 +31,25 @@ function login() {
     req.send(JSON.stringify(dato));
 
 }
+
+//Función que muestra el usuario registrado en el home
+function mostrarUsuarioLogueado(callback){
+    let request = new XMLHttpRequest();
+
+    request.onload = function() {
+    var datosDeUsuarios = request.responseText;
+
+    callback(datosDeUsuarios);
+       
+    }
+   
+   
+    request.open('GET', '/usuarios/datosUsuarios');
+    request.send();
+}
+
+function muestraDatosUsuario(datos) {
+    var info = datos;
+    console.log("aca")
+
+}
