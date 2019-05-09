@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-flow: column;
+}
+
+/*Estilo del login*/
+.contenedor-form{
+    background-color: rgb(10, 27, 82);
+    width: 320px;
+    height: 430px;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+}
+
+.logo{
+    margin: 10px 20px 0px 20px;
+    height: 58px;
+}
+
+.contenedor-form h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.contenedor-form h4{
+    margin-top: 5px;
+}
+
+.contenedor-form label{
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+}
+
+.contenedor-form input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contenedor-form input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 154, 2);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-form input[type="submit"]:hover{
+    font-weight: bold;
+    border: solid 2px;
+    background: rgb(219, 68, 42);
+}
+
+#button-login{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 154, 2);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#button-login:hover{
+    font-weight: bold;
+    border: solid 2px;
+    background: rgb(219, 68, 42);
+}
+
+
+.contenedor-form a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 10px;
+    color: rgb(184, 184, 184);
+}
+.contenedor-form a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*Estilo del registro*/
+.contenedor-form2{
+    background-color: rgb(10, 27, 82);
+    width: 420px;
+    height: 510px;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+}
+
+.logo2{
+    margin: 10px 40px 0px 40px;
+    height: 63px;
+}
+
+.contenedor-form2 h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.contenedor-form2 h4{
+    margin-top: 5px;
+}
+
+.contenedor-form2 label{
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+}
+
+.contenedor-form2 input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contenedor-form2 input[type="text"],
+.contenedor-form2 input[type="email"],
+.contenedor-form2 input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contenedor-form2 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 154, 2);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-form2 input[type="submit"]:hover{
+    font-weight: bold;
+    border: solid 2px;
+    background: rgb(219, 68, 42);
+}
+
+#button-login{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 154, 2);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#button-login:hover{
+    font-weight: bold;
+    border: solid 2px;
+    background: rgb(219, 68, 42);
+}
+
+.contenedor-form2 a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 10px;
+    color: rgb(184, 184, 184);
+}
+.contenedor-form2 a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*Estilo del home*/
+header{
+    background: rgb(255, 154, 2);
+    background-color: rgb(10, 27, 82);
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    color: white;
+    justify-content: space-between;
+
+}
+
+.contenedor-logo{
+    display: flex;
+    flex: 1 1 auto;
+    width: 30%;
+    margin-top: 20px;
+    flex-flow: row;
+    justify-content: left;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+nav{
+    background-color: rgb(10, 27, 82);
+    display: flex;
+    flex: 1 1 auto;
+    width: 55%;
+    margin-top: 32px;
+    margin-right: 20px;
+    justify-items: right;
+}
+
+.menu-home{
+    display: inline-flex;
+    flex: 1 1 auto;
+    flex-flow: row;
+    height: 50px;
+    justify-content: right;
+}
+    .menu-home li{
+    flex-grow: 1 ;
+    list-style: none;
+    }
+    .menu-home li a{
+        background-color: rgb(10, 27, 82);
+        text-decoration: none;
+        color: white;
+        font-style: normal;
+        font-size: 96%;
+        text-align: center;
+        padding-top: 10px; 
+        padding-bottom: 10px;
+        display: block;
+           }
+    .menu-home li a:hover{
+    background: rgb(255, 154, 2);
+    font-style: italic;
+    font-weight: bold;
+    }
+
+#boton-usuario{
+    background-color: rgb(219, 68, 42);
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    display: flex;
+    flex-flow: column;
+}
+
+.contenedor-general{
+    background-color: rgb(59, 76, 131);
+    height: auto;
+    padding: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.img-portada{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.contenedor-home{
+    display: flex;
+    flex-flow: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    align-content: space-between;
+}
+
+.caja-texto{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.caja-reserva{
+    background-color: rgb(219, 68, 42);
+    border: solid 2px;
+    width: 30%;
+    height: 90px;
+    padding: 15px;
+}
+
+.footer{
+    background-color: rgb(131, 131, 133);
+    height: 50px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+/*ESTILO USUARIO*/
+#img-perfil{
+    width: 25%;
+}
+
+/*ESTILO EMPRESA*/
+.caja-foto{
+    width: 30%;
+}
+
