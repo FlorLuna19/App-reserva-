@@ -1,16 +1,9 @@
-{
-    "resultado": 
-        {"codigo": "200",
-            "mensaje": "OK"
-        },
+[{"dia":"lunes",
+    "lugares":"10"},
 
-        "datos": {
-            "lugaresDisponibles": [
-                {
-                    "dia": "Lunes",
-                    "sentido": "ida",
-                    "lugares": 9
-                }
-            ]
-        }
-}
+{"dia":"martes",
+    "lugares":"5"},
+
+{"dia":"miercoles",
+    "lugares":"0"}
+    ]

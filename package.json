@@ -1,5 +1,5 @@
 {
-  "name": "proyecto-prueba",
+  "name": "app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-session": "^1.16.1"
   }
 }

@@ -11,8 +11,9 @@ const expressSession = require('express-session');
 //const mongoURL = 'mongodb://localhost: 27017;
 //const dbName = "testdb";
 
-//Js para login
+//Js
 const login = require('./login');
+//const reserva = require('./reserva');//agregue
 
 //Manejo de sesión en Express
 app.use(expressSession({
@@ -27,13 +28,16 @@ app.use(bodyParser.urlencoded({ extended: true}));
 
 //Ruta para uso de elementos estáticos
 app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../client/html')));
+app.use(express.static(path.join(__dirname, '../client/js')));
+
 
 
 //GET
-//Ingreso al archivo index
+//Ingreso a la carpeta raíz
 app.get('/', function (req, res) {
     console.log("Entre al login");
-    res.sendFile(path.join(__dirname, '../client/index.html'));
+    res.sendFile(path.join(__dirname, '../client/html/index.html'));
 })
 
 
@@ -60,10 +64,31 @@ app.post('/login', (req, res) => {
 });
 
 
+//GET / home
+app.get('home', (req, res) => {
+  //Si el usuario quiere ir al home, valido la sesión.
+  if (req.session.userId != undefined) {
+    // Lo dirijo al archivo home.html
+    res.sendFile(path.join(__dirname, '..client/html/home.html'));
+  } else {
+    //Si el usuario no tiene una sesión activa lo redirijo a login para que inicie sesión.
+    res.redirect('/');
+  }
+});
+
+
+//GET logout
+app.get('/logout', (req, res) => {
+  //Sale de sesión y redirijo al login
+  req.session.destroy();
+  res.redirect("/");
+})
+
+
 //POST / home
 app.get('/home', function (req, res) {
     console.log("Entre al home");
-    res.sendFile(path.join(__dirname, '../client/home.html'));
+    res.sendFile(path.join(__dirname, '../client/html/home.html'));
 })
 
 
@@ -71,6 +96,8 @@ app.get('/usuario', function (req, res) {
     console.log("Entre a usuario");
     res.sendFile(path.join(__dirname, '../client/usuario.html'));
 })
+
+
 
 app.get('/usuario/datosUsuarios', function (req, res) {
 
@@ -112,8 +139,7 @@ app.get('/reservarlugar', function (req, res) {
       mensaje: "Se reservó ok"
     })
   })
-  
-  
+
 })
 
 
